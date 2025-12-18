@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le titre de la page -->
+    <title>Sen Suivi – Bien-être Étudiant</title>
+    <!-- lien css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Le corps de la page -->
+<body>
+    <!-- L'entete de la page -->
+    <header>
+        <div class="interieur">
+            <!--Titre-->
+            <h1 class="titre">Sen Suivi - Bien-être Étudiant</h1>
+        </div>
+         <!--navigation-->
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#services">Nos services</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Section présentation-->
+    <section id="accueil" class="bienvenue">
+        <div class="interieur">
+            <div class="bienvenue-interne">
+                <h1>Bienvenue sur Sen Suivi</h1>
+                <p>Votre plateforme dédiée au bien-être des étudiants.</p>
+                <img src="images/bienvenue.jpg" class="image-accueil" alt="Étudiants détendus utilisant la plateforme Sen Suivi">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section a propos-->
+
+    <section id="apropos" class="propos">
+        <div class="interieur">
+        <h2>À propos de nous</h2>
+
+        <div class="propos-interieur">
+            <div class="propos-texte">
+                <h3>Notre Mission</h3>
+                <p>Sen Suivi est une initiative visant à améliorer le bien-être des étudiants à 
+                    travers divers services et ressources.Notre mission est de sensibiliser,
+                    accompagner et soutenir chaque étudiant dans son parcours académique et personnel.
+                </p>
+
+                <h3>Nos Objectifs</h3>
+                <ul class="object">
+                    <li>Sensibiliser les étudiants sur l'importance de la santé mentale</li>
+                    <li>Prévenir le stress, l'anxiété et l'isolement</li>
+                    <li>Encourager le bien-être émotionnel et social</li>
+                    <li>Faciliter l'accès aux ressources d'aide psychologique</li>
+                </ul>
+
+                <h3>Pourquoi c'est important ?</h3>
+                <p>
+                    Les années d'études peuvent être stressantes : pression académique, adaptation sociale, 
+                    préparation de l'avenir... Il est essentiel de prendre soin de sa santé mentale pour 
+                    réussir sereinement ses études et s'épanouir pleinement. 
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="interieur">
+            <h2>Nos services</h2>
+            <p class="offre">Découvrez comment Sen Suivi peut vous accompagner</p>
+            
+            <div class="services-grid" >
+            
+                <article class="service-card">
+                    <h3>Sensibilisation et information</h3>
+                    <p>
+                    Accédez à des articles, vidéos et ressources pour mieux comprendre 
+                    la santé mentale et reconnaître les signes de mal-être. 
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Accompagnement Psychologique</h3>
+                    <p>
+                        Bénéficiez d'un accompagnement par des professionnels qualifiés 
+                        dans un cadre bienveillant et confidentiel.
+                    </p>
+                </article>
+                        
+                <article class="service-card">
+                    <h3>Suivi Émotionnel</h3>
+                    <p>
+                        Suivez votre état émotionnel au quotidien grâce à des outils 
+                        d'auto-évaluation et des conseils personnalisés.
+                    </p>
+                </article>
+                
+                <article class="service-card">
+                    <h3>Orientation vers des Professionnels</h3>
+                    <p>
+                        Trouvez facilement des psychologues, conseillers et structures 
+                        d'aide adaptées à vos besoins.
+                    </p>
+                </article>
+            </div>
+        </div> 
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="interieur">
+            <h2>Contactez-nous pour retrouver votre bien-être.</h2>
+            <p>Nous sommes là pour vous accompagner dans votre parcours de bien-être. 
+            N'hésitez pas à nous contacter pour toute question ou demande d'information.
+            </p>
+
+            <!-- formulaire de contact -->
+            <form action="contact-form" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>  
+    </section>    
+
+    <footer>
+        <div class="interieur">
+            <p>&copy; 2024 Sen Suivi. Tous droits réservés.</p>
+        </div>
+        <div>
+            <ul class="footer-nav">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#services">Nos services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Suivez-nous sur les réseaux sociaux :</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkdIn</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

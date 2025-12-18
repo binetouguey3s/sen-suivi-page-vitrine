@@ -1,0 +1,371 @@
+/* ========================================
+   RÉINITIALISATION ET STYLES GÉNÉRAUX
+   ======================================== */
+
+/* Reset de base pour uniformiser les navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables CSS pour faciliter la maintenance */
+:root {
+    --couleur-principale: #2563eb;
+    --couleur-secondaire: #1e40af;
+    --couleur-accent: #0ea5e9;
+    --couleur-texte: #1f2937;
+    --couleur-texte-clair: #6b7280;
+    --couleur-fond: #f9fafb;
+    --couleur-blanc: #ffffff;
+    --espacement-section: 80px;
+}
+
+/* Styles de base du body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--couleur-texte);
+    background-color: var(--couleur-fond);
+}
+
+/* Conteneur pour centrer le contenu et limiter la largeur */
+.conteneur {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ========================================
+   EN-TÊTE ET NAVIGATION
+   ======================================== */
+
+header {
+    background-color: var(--couleur-blanc);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--couleur-principale);
+    font-weight: 700;
+}
+
+.menu-navigation {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu-navigation a {
+    text-decoration: none;
+    color: var(--couleur-texte);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.menu-navigation a:hover {
+    color: var(--couleur-principale);
+    background-color: #eff6ff;
+}
+
+
+/* ========================================
+   SECTION PRÉSENTATION
+   ======================================== */
+
+.section-presentation {
+    padding: var(--espacement-section) 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--couleur-blanc);
+}
+
+.section-presentation .conteneur {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.texte-presentation {
+    flex: 1;
+}
+
+.texte-presentation h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.texte-presentation p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    opacity: 0.95;
+}
+
+.image-presentation {
+    flex: 1;
+    text-align: center;
+}
+
+.image-presentation img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ========================================
+   SECTION FORMATIONS
+   ======================================== */
+
+.section-formations {
+    padding: var(--espacement-section) 0;
+    background-color: var(--couleur-blanc);
+}
+
+.section-formations h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--couleur-principale);
+    margin-bottom: 10px;
+}
+
+.sous-titre {
+    text-align: center;
+    color: var(--couleur-texte-clair);
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+/* Grille de cartes avec CSS Grid */
+.grille-cartes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.carte {
+    background-color: var(--couleur-blanc);
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.2);
+    border-color: var(--couleur-principale);
+}
+
+.carte .icone {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.carte h3 {
+    font-size: 1.4rem;
+    color: var(--couleur-principale);
+    margin-bottom: 15px;
+}
+
+.carte p {
+    color: var(--couleur-texte-clair);
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   SECTION CONTACT
+   ======================================== */
+
+.section-contact {
+    padding: var(--espacement-section) 0;
+    background-color: var(--couleur-fond);
+}
+
+.section-contact h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--couleur-principale);
+    margin-bottom: 15px;
+}
+
+.intro-contact {
+    text-align: center;
+    color: var(--couleur-texte-clair);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Formulaire avec Flexbox */
+.formulaire-contact {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--couleur-blanc);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.champ-formulaire {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.champ-formulaire label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--couleur-texte);
+}
+
+.champ-formulaire input,
+.champ-formulaire textarea {
+    padding: 12px 15px;
+    border: 2px solid #e5e7eb;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.champ-formulaire input:focus,
+.champ-formulaire textarea:focus {
+    outline: none;
+    border-color: var(--couleur-principale);
+}
+
+.bouton-envoi {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--couleur-principale);
+    color: var(--couleur-blanc);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bouton-envoi:hover {
+    background-color: var(--couleur-secondaire);
+    transform: translateY(-2px);
+}
+
+.bouton-envoi:active {
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   PIED DE PAGE
+   ======================================== */
+
+footer {
+    background-color: var(--couleur-texte);
+    color: var(--couleur-blanc);
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: var(--couleur-accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--couleur-blanc);
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE
+   ======================================== */
+
+/* Tablettes et petits écrans */
+@media (max-width: 768px) {
+    
+    /* Navigation adaptée */
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 20px;
+    }
+
+    .menu-navigation {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* Section présentation en colonne */
+    .section-presentation .conteneur {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texte-presentation h1 {
+        font-size: 2rem;
+    }
+
+    /* Réduction de l'espacement */
+    :root {
+        --espacement-section: 50px;
+    }
+
+    /* Grille adaptée */
+    .grille-cartes {
+        grid-template-columns: 1fr;
+    }
+
+    /* Formulaire adapté */
+    .formulaire-contact {
+        padding: 25px;
+    }
+}
+
+/* Petits mobiles */
+@media (max-width: 480px) {
+    
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .texte-presentation h1 {
+        font-size: 1.6rem;
+    }
+
+    .section-formations h2,
+    .section-contact h2 {
+        font-size: 1.8rem;
+    }
+}
+

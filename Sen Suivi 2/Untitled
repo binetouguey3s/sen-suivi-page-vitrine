@@ -1,0 +1,132 @@
+Plateforme de sensibilisation à la santé mentale des étudiants
+
+    Tu es un développeur web expert en HTML5 et CSS3, avec une approche pédagogique.
+    Je suis étudiante en BTS Informatique Industrielle et Réseaux et je dois réaliser une page vitrine statique dans le cadre de l’Atelier 4 : HTML – CSS.
+    🧠 Thème du projet
+
+    Création d’une plateforme numérique de sensibilisation à la santé mentale chez les étudiants, appelée :
+
+    « Sen Suivi – Bien-être Étudiant »
+
+    La plateforme a pour objectif de :
+
+        sensibiliser les étudiants sur la santé mentale,
+
+        prévenir le stress, l’anxiété et l’isolement,
+
+        encourager le bien-être émotionnel et social.
+
+    📁 Structure obligatoire du projet
+
+/page-vitrine
+├── index.html
+├── style.css
+└── images/
+
+⚠️ Contraintes strictes à respecter
+
+    Utiliser uniquement HTML5 sémantique
+
+    Aucun style inline
+
+    Aucune balise ou attribut obsolète
+
+    Code clair, structuré et commenté
+
+    Respect des bonnes pratiques HTML & CSS
+
+    Page statique uniquement (pas de JS)
+
+🧱 Contenu obligatoire de la page
+1️⃣ En-tête <header>
+
+    Nom du projet : Sen Suivi – Bien-être Étudiant
+
+    Menu de navigation avec liens internes :
+
+        Accueil
+
+        À propos
+
+        Nos services
+
+        Contact
+
+2️⃣ Section présentation <section id="apropos">
+
+    Titre principal <h1> clair et engageant
+    (ex : « Pour une meilleure santé mentale des étudiants »)
+
+    Texte de présentation expliquant :
+
+        la mission de la plateforme,
+
+        les objectifs,
+
+        l’importance de la santé mentale chez les étudiants
+
+    Une image illustrative liée au bien-être étudiant
+
+    Image stockée dans images/ avec un attribut alt pertinent
+
+3️⃣ Section services <section id="services">
+
+    Titre <h2>
+
+    Présenter 3 ou 4 services sous forme de cartes :
+
+        Sensibilisation et information
+
+        Accompagnement psychologique
+
+        Suivi émotionnel
+
+        Orientation vers des professionnels
+
+4️⃣ Section contact <section id="contact">
+
+    Court texte invitant les étudiants à s’inscrire ou à demander de l’aide
+
+    Formulaire contenant :
+
+        Champ Nom
+
+        Champ Email
+
+        Bouton Envoyer
+
+5️⃣ Pied de page <footer>
+
+    Copyright
+
+    Mention : « Plateforme dédiée au bien-être des étudiants »
+
+    Réseaux sociaux (facultatif)
+
+🎨 Styles CSS attendus (style.css)
+
+    Design simple, moderne et apaisant
+
+    Utilisation de :
+
+        Flexbox pour la mise en page
+
+        Couleurs douces (bleu, vert, blanc, etc.)
+
+        Typographie lisible
+
+        Espacements cohérents
+
+    Responsive de base (mobile-friendly)
+
+📌 Résultat attendu
+
+    Fournir le code complet de index.html
+
+    Fournir le code complet de style.css
+
+    Le code doit être prêt à être exécuté
+
+    Le projet doit être facile à expliquer lors de la présentation orale
+
+Commence par générer le fichier index.html, puis le fichier style.css, avec des commentaires pédagogiques.
